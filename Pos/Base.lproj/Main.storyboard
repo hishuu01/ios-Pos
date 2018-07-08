@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dgi-Ym-YHg">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SaleNavi-->
+        <scene sceneID="kkH-8w-glQ">
+            <objects>
+                <navigationController id="sF1-ZV-UrI" userLabel="SaleNavi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="売上入力" image="ImageSale" id="1Y7-y8-bq5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pU8-1W-OlO">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Mtd-Ly-yax" kind="relationship" relationship="rootViewController" id="OrR-Mn-CcH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="32o-cK-F4x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2280" y="-1241"/>
+        </scene>
+        <!--Sale-->
+        <scene sceneID="eXl-2S-24o">
+            <objects>
+                <viewController id="Mtd-Ly-yax" userLabel="Sale" customClass="SaleViewController" customModule="Pos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2M9-Y2-IOV"/>
+                        <viewControllerLayoutGuide type="bottom" id="muw-GQ-HaH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rmc-yw-LFe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="売上入力" image="ImageSale" id="Pue-Qb-eRI"/>
+                    <navigationItem key="navigationItem" id="Mel-ol-Et1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xUQ-bH-tW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2216" y="-1148"/>
+        </scene>
+        <!--PayNavi-->
+        <scene sceneID="ghm-2s-LZG">
+            <objects>
+                <navigationController id="knH-2N-nxU" userLabel="PayNavi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="出金入力" image="ImagePay" id="otK-gF-La5"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PdK-GK-XQH">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="wY7-WL-39x" kind="relationship" relationship="rootViewController" id="KUo-Ed-YWB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FiJ-do-nBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-593" y="-875"/>
+        </scene>
+        <!--Pay-->
+        <scene sceneID="x8y-qY-oE8">
+            <objects>
+                <viewController id="wY7-WL-39x" userLabel="Pay" customClass="PayViewController" customModule="Pos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dFw-1T-VZb"/>
+                        <viewControllerLayoutGuide type="bottom" id="NvB-4m-MvL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="s8Y-tG-1xx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="出金入力" image="ImagePay" id="5vC-iB-5lu"/>
+                    <navigationItem key="navigationItem" id="FmZ-pp-zXi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="86T-YL-luz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="-810"/>
+        </scene>
+        <!--SetupNavi-->
+        <scene sceneID="eEZ-3u-eIr">
+            <objects>
+                <navigationController id="5Ro-Dt-nPd" userLabel="SetupNavi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="項目設定" image="ImageSetup" id="cXF-u2-xgm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AwA-fU-Bp5">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PL7-eO-VhF" kind="relationship" relationship="rootViewController" id="sne-QU-f24"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X9x-eG-qVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-853" y="-300"/>
+        </scene>
+        <!--Setup-->
+        <scene sceneID="oeP-yA-qDh">
+            <objects>
+                <viewController id="PL7-eO-VhF" userLabel="Setup" customClass="SetupViewController" customModule="Pos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eK2-Yw-cTf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Os7-Jb-yjY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e1c-8G-OCn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="項目設定" image="ImageSetup" id="kg7-Vw-v35"/>
+                    <navigationItem key="navigationItem" id="zSc-rN-nub"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0p-mC-Tte" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-613" y="-273"/>
+        </scene>
+        <!--YearNavi-->
+        <scene sceneID="ru5-p4-Iyh">
+            <objects>
+                <navigationController id="f3P-IA-xC9" userLabel="YearNavi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="年間集計" image="ImageYear" id="nXh-ic-vqW"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6nK-dp-B81">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.41008830229999998" green="0.75946461030000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xth-Y8-W4F" kind="relationship" relationship="rootViewController" id="Xaq-Cd-KCe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vif-qK-0Rf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="233" y="-1164"/>
+        </scene>
+        <!--Year-->
+        <scene sceneID="BpB-dl-aIO">
+            <objects>
+                <viewController id="xth-Y8-W4F" userLabel="Year" customClass="YearViewController" customModule="Pos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JC3-Qe-gg8"/>
+                        <viewControllerLayoutGuide type="bottom" id="g3Y-AC-pQ3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BOL-59-XsX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="年間集計" image="ImageYear" id="qmU-MH-kuh"/>
+                    <navigationItem key="navigationItem" id="iMV-Ky-CEP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywK-SR-fci" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="356" y="-1054"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2Sf-P7-5fU">
+            <objects>
+                <tabBarController id="dgi-Ym-YHg" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ZWp-ve-5pq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="sF1-ZV-UrI" kind="relationship" relationship="viewControllers" id="MyJ-M9-o7t"/>
+                        <segue destination="knH-2N-nxU" kind="relationship" relationship="viewControllers" id="9FT-CJ-0vb"/>
+                        <segue destination="c7R-eh-QpJ" kind="relationship" relationship="viewControllers" id="31R-Ln-aKO"/>
+                        <segue destination="f3P-IA-xC9" kind="relationship" relationship="viewControllers" id="lSR-NX-7g7"/>
+                        <segue destination="5Ro-Dt-nPd" kind="relationship" relationship="viewControllers" id="qoD-tR-JfQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Gf-H8-AUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1554" y="-608"/>
+        </scene>
+        <!--Summary-->
+        <scene sceneID="40T-Fv-lLe">
+            <objects>
+                <tableViewController id="HpP-D0-0ie" userLabel="Summary" customClass="SummaryViewController" customModule="Pos" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="30" sectionHeaderHeight="28" sectionFooterHeight="28" id="xNV-Ny-tcZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="30" id="9il-Tb-iGa">
+                                <rect key="frame" x="0.0" y="28" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9il-Tb-iGa" id="LZT-YG-BZz">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="29.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HpP-D0-0ie" id="qJC-mp-T9X"/>
+                            <outlet property="delegate" destination="HpP-D0-0ie" id="OOF-91-dVa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="15w-Wb-U3f"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9hR-6U-vK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2094" y="-783"/>
+        </scene>
+        <!--SummaryNavi-->
+        <scene sceneID="XjS-zM-SZY">
+            <objects>
+                <navigationController id="c7R-eh-QpJ" userLabel="SummaryNavi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="月日集計" image="ImageSummary" id="Oxb-en-dSd"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zay-5B-rwR">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.41008830233792881" green="0.75946461026042045" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HpP-D0-0ie" kind="relationship" relationship="rootViewController" id="2Mm-j7-z8I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygs-zK-j7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2280" y="-857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ImagePay" width="10" height="15"/>
+        <image name="ImageSale" width="16" height="16"/>
+        <image name="ImageSetup" width="16" height="16"/>
+        <image name="ImageSummary" width="16" height="16"/>
+        <image name="ImageYear" width="14" height="16"/>
+    </resources>
+</document>

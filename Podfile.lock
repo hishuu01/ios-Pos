@@ -1,0 +1,15 @@
+PODS:
+  - SnapKit (3.0.2)
+  - SQLiteSwift3 (1.2.1)
+
+DEPENDENCIES:
+  - SnapKit (~> 3.0.2)
+  - SQLiteSwift3 (~> 1.2.1)
+
+SPEC CHECKSUMS:
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  SQLiteSwift3: e6bbe490f239dcac98b16cfdb79c339c092f44c9
+
+PODFILE CHECKSUM: baa5e98af19bca0056d416c32572e3b4820cdbc1
+
+COCOAPODS: 1.3.1
